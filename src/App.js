@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './containers/Home';
 import Projects from './containers/Projects';
 import About from './containers/About';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import github from './images/logo 5.png';
 import linkedinorange from './images/linkedin 1.png';
@@ -62,7 +62,7 @@ function App() {
           </a>
         </span>
       </span>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <AnimatePresence exitBeforeEnter>
           <Switch>
@@ -71,7 +71,7 @@ function App() {
             <Route path='/about' component={About} />
           </Switch>
         </AnimatePresence>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
