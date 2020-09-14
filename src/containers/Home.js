@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import Typical from 'react-typical';
 const Home = () => {
   const pageVariant = {
     in: {
@@ -27,7 +27,21 @@ const Home = () => {
     >
       <div>
         <h1 className='font-body text-white text-3xl md:text-4xl lg:text-6xl ml-8 mb-4'>
-          Evan Hameed <br /> Front-end Web developer
+          Evan Hameed <br />
+          <span className='text-secondary'>
+            <Typical
+              steps={[
+                'Web Developer... ',
+                1500,
+                'Programming Craftsman...  ',
+                1500,
+                'Web Designer... ',
+                1500,
+              ]}
+              loop={Infinity}
+              wrapper='p'
+            />
+          </span>
         </h1>
 
         <a
