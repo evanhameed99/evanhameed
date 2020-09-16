@@ -98,7 +98,7 @@ const Contact = () => {
             class='form-textarea mt-1 block w-full'
             autoComplete='off'
             rows='3'
-            placeholder='Enter some long form content.'
+            placeholder='Enter your message here!'
             name='message'
             required
           ></textarea>
