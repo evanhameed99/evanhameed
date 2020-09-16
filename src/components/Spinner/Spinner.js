@@ -12,7 +12,7 @@ const Spinner = () => {
   return (
     <div className='h-screen flex justify-center items-center bg-white z-30 '>
       {' '}
-      <PropagateLoader css={override} size={20} color={'#ee7153'} />
+      <PropagateLoader css={override} size={10} color={'#ee7153'} />
     </div>
   );
 };

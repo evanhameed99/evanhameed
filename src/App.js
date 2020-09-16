@@ -18,7 +18,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setSpin(false);
-    }, 1000);
+    }, 1500);
   }, []);
   return (
     <>
