@@ -16,20 +16,7 @@ const Contact = () => {
     duration: 1,
     ease: 'easeOut',
   };
-  const pageVariant2 = {
-    in: {
-      opacity: 1,
-      x: 0,
-    },
-    out: {
-      opacity: 0,
-      x: '20vh',
-    },
-  };
-  const pageTransition2 = {
-    duration: 1,
-    ease: 'easeOut',
-  };
+
   const [showAlert, setShowAlert] = useState(false);
   const [name, setName] = useState('');
   function sendEmail(e) {

@@ -2,7 +2,7 @@ import React from 'react';
 import './About.css';
 import profile from '../images/profile.jpg';
 import { motion } from 'framer-motion';
-import Typical from 'react-typical';
+
 const About = () => {
   const pageVariant = {
     in: {

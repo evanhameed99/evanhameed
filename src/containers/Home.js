@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Typical from 'react-typical';
 import { Link } from 'react-router-dom';
-import emailjs from 'emailjs-com';
+
 const Home = () => {
   const pageVariant = {
     in: {
