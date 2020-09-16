@@ -1,6 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import { PropagateLoader } from 'react-spinners';
+import { SyncLoader } from 'react-spinners';
 
 // Can be a string as well. Need to ensure each key-value pair ends with ;
 const override = css`
@@ -10,9 +10,9 @@ const override = css`
 `;
 const Spinner = () => {
   return (
-    <div className='h-screen flex justify-center items-center bg-white z-30 '>
+    <div className='h-screen flex justify-center items-center bg-white z-30 w-full '>
       {' '}
-      <PropagateLoader css={override} size={10} color={'#ee7153'} />
+      <SyncLoader css={override} size={10} color={'#ee7153'} />
     </div>
   );
 };
