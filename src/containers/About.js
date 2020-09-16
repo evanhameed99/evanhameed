@@ -55,9 +55,7 @@ const About = () => {
         <p className='md:text-xl text-lg text-gray-300 font-medium  '>
           As a software engineering student, my life revolves around studying,
           coding, and discovering new technologies. Building websites is my
-          favorite way to express my ideas, thoughts, and creativity. What I
-          really love about coding and development is the amount of feedback,
-          support, and love I get when people get to try my projects. When I am
+          favorite way to express my ideas, thoughts, and creativity. When I am
           not coding, I will probably be reading online courses or working out.
         </p>
       </motion.div>
