@@ -53,14 +53,12 @@ const About = () => {
         className=' md:w-2/5 w-5/6 '
       >
         <p className='md:text-xl text-lg text-gray-300 font-medium  '>
-          <Typical
-            steps={[
-              'As a software engineering student, my life revolves around studying, coding, and discovering new technologies. Building websites is my favorite way to express my ideas, thoughts, and creativity. What I really love about coding and development is the amount of feedback, support, and love I get when people get to try my projects. When I am not coding, I will probably be reading online courses or working out.',
-              1500,
-            ]}
-            loop={Infinity}
-            wrapper='p'
-          />
+          As a software engineering student, my life revolves around studying,
+          coding, and discovering new technologies. Building websites is my
+          favorite way to express my ideas, thoughts, and creativity. What I
+          really love about coding and development is the amount of feedback,
+          support, and love I get when people get to try my projects. When I am
+          not coding, I will probably be reading online courses or working out.
         </p>
       </motion.div>
     </div>

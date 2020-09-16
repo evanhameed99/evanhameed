@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Typical from 'react-typical';
+import { Link } from 'react-router-dom';
+import emailjs from 'emailjs-com';
 const Home = () => {
   const pageVariant = {
     in: {
@@ -33,7 +35,7 @@ const Home = () => {
               steps={[
                 'Web Developer... ',
                 1500,
-                'Programming Craftsman...  ',
+                'Software Craftsman...  ',
                 1500,
                 'Web Designer... ',
                 1500,
@@ -44,14 +46,12 @@ const Home = () => {
           </span>
         </h1>
 
-        <a
-          target='_blank'
-          rel='noopener noreferrer'
-          href='https://mail.google.com/mail/u/0/?view=cm&fs=1&to=evanhameed9966@gmail.com&tf=1'
-          className=' ml-8 font-body text-white font-bold bg-secondary px-2 py-2  shadow-md'
+        <Link
+          to='/contact'
+          className='hover:bg-white hover:text-secondary transition-all duration-200 ease-in-out ml-8 font-body text-white font-bold bg-secondary  px-2 py-2  shadow-md'
         >
           <span className='tracking-wider'>CONTACT NOW</span>
-        </a>
+        </Link>
       </div>
     </motion.div>
   );

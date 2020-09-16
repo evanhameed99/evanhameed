@@ -11,6 +11,7 @@ import github from './images/logo 5.png';
 import linkedinorange from './images/linkedin 1.png';
 import twitterorange from './images/twitter 1.png';
 import bg from './images/darktexture.jpg';
+import Contact from './containers/Contact';
 
 function App() {
   return (
@@ -148,6 +149,7 @@ function App() {
               <Route exact path='/' component={Home} />
               <Route path='/projects' component={Projects} />
               <Route path='/about' component={About} />
+              <Route path='/contact' component={Contact} />
             </Switch>
           </AnimatePresence>
         </HashRouter>
