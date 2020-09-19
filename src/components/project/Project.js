@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import logo from '../../images/darkdum.png';
 import { motion } from 'framer-motion';
 import ReactCardFlip from 'react-card-flip';
-const Project = ({ title, desc, link }) => {
+const Project = ({ title, logo, desc, link, ...props }) => {
   const [isFlipped, setFlipped] = useState(false);
   return (
-    <motion.div className='text-black w-5/6 md:w-2/6 lg:w-1/5 shadow-base rounded-lg m-4'>
+    <motion.div
+      className={`text-black w-5/6 md:w-2/6 lg:w-1/5 shadow-base rounded-lg m-4 ${props.className}`}
+    >
       <ReactCardFlip
         isFlipped={isFlipped}
         flipDirection='vertical'
@@ -14,7 +16,7 @@ const Project = ({ title, desc, link }) => {
         }}
       >
         <div className='bg-gray-200 ' onClick={() => setFlipped(!isFlipped)}>
-          <img className='mx-auto py-4' src={logo} alt='dumbbell' />
+          <img className='mx-auto py-4 w-20' src={logo} alt='dumbbell' />
           <h3 className='text-lg text-center py-4 uppercase font-bold h-full'>
             {title}
           </h3>

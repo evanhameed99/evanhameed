@@ -23,18 +23,28 @@ const Projects = () => {
       description:
         'Training assistant that educates people on how to take care of their bodies and start thinking of their health, wellness, and fitness. In order to look better and be healthier',
       link: 'https://traintomaintains.netlify.app/',
+      tech: [
+        'React',
+        'React-router',
+        'Redux state management tool',
+        'Mailchimp',
+        'Tailwind CSS',
+      ],
+      logo: 'https://www.flaticon.com/svg/static/icons/svg/3043/3043888.svg',
     },
     {
-      title: 'train to maintain',
+      title: 'COVID-19 TRACKER',
       description:
-        'Training assistant that educates people on how to take care of their bodies and start thinking of their health, wellness, and fitness. In order to look better and be healthier',
-      link: 'https://traintomaintains.netlify.app/',
-    },
-    {
-      title: 'train to maintain',
-      description:
-        'Training assistant that educates people on how to take care of their bodies and start thinking of their health, wellness, and fitness. In order to look better and be healthier',
-      link: 'https://traintomaintains.netlify.app/',
+        'Online tracker that exhibits daily COVID-19 total, recovered, and death cases by demonstrating the daily statistics on tables, charts, and map.',
+      link: 'https://covid-19-tracker-be85c.firebaseapp.com/',
+      tech: [
+        'React',
+        'React leaflet',
+        'React chart js',
+        'Material UI',
+        'Firebase hosting',
+      ],
+      logo: 'https://www.flaticon.com/svg/static/icons/svg/2585/2585191.svg',
     },
   ];
   return (
@@ -53,9 +63,12 @@ const Projects = () => {
         {projects.map((proj) => {
           return (
             <Project
+              className='project'
               title={proj.title}
               desc={proj.description}
               link={proj.link}
+              tech={proj.tech}
+              logo={proj.logo}
             />
           );
         })}
