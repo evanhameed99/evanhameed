@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { motion } from 'framer-motion';
 import ReactCardFlip from 'react-card-flip';
-const Project = ({ title, logo, desc, link, ...props }) => {
+const Project = ({ title, tech, logo, desc, link, ...props }) => {
   const [isFlipped, setFlipped] = useState(false);
   return (
     <motion.div
@@ -43,11 +43,9 @@ const Project = ({ title, logo, desc, link, ...props }) => {
           onClick={() => setFlipped(!isFlipped)}
         >
           <h2 className='py-4'> Technologies Used : </h2>
-          <li>React</li>
-          <li>React-router</li>
-          <li>Redux state managment tool</li>
-          <li>Mailchimp</li>
-          <li>Tailwind css</li>
+          {tech.map((singleTech, index) => {
+            return <li key={index}>{singleTech}</li>;
+          })}
         </div>
       </ReactCardFlip>
     </motion.div>

@@ -60,9 +60,10 @@ const Projects = () => {
         technical projects
       </h1>
       <div className='mt-8  flex flex-wrap justify-center'>
-        {projects.map((proj) => {
+        {projects.map((proj, index) => {
           return (
             <Project
+              key={index}
               className='project'
               title={proj.title}
               desc={proj.description}
