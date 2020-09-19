@@ -6,6 +6,7 @@ const Project = ({ title, logo, desc, link, ...props }) => {
   const [isFlipped, setFlipped] = useState(false);
   return (
     <motion.div
+      // whileHover={{ scale: 1.1 }}
       className={`text-black w-5/6 md:w-2/6 lg:w-1/5 shadow-base rounded-lg m-4 ${props.className}`}
     >
       <ReactCardFlip
@@ -15,12 +16,17 @@ const Project = ({ title, logo, desc, link, ...props }) => {
           height: '40vh',
         }}
       >
-        <div className='bg-gray-200 ' onClick={() => setFlipped(!isFlipped)}>
+        <div
+          className='bg-gray-200 rounded-lg '
+          onClick={() => setFlipped(!isFlipped)}
+        >
           <img className='mx-auto py-4 w-20' src={logo} alt='dumbbell' />
           <h3 className='text-lg text-center py-4 uppercase font-bold h-full'>
             {title}
           </h3>
-          <p className='mx-5 font-medium text-xs text-gray-600 pb-4'>{desc}</p>
+          <p className='mx-5 font-medium text-xs text-gray-600 pb-4  h-24'>
+            {desc}
+          </p>
           <div className=' flex justify-around pb-4'>
             <a
               target='_blank'
