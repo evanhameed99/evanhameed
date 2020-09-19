@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../images/darkdum.png';
+
 import { motion } from 'framer-motion';
 import ReactCardFlip from 'react-card-flip';
 const Project = ({ title, logo, desc, link, ...props }) => {
