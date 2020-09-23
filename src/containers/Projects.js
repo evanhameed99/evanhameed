@@ -46,6 +46,20 @@ const Projects = () => {
       ],
       logo: 'https://www.flaticon.com/svg/static/icons/svg/2585/2585191.svg',
     },
+    {
+      title: 'WHATSAPP DESKTOP CLONE',
+      description:
+        'Whatsapp clone where I tried to implement whatsapp user interface and some of its functionalities such as messaging ,rooming, and authentication.',
+      link: 'https://whatsup-clone-50091.firebaseapp.com/',
+      tech: [
+        'React',
+        'React-router',
+        'Context API',
+        'Material UI',
+        'Firebase hosting',
+      ],
+      logo: 'https://www.flaticon.com/svg/static/icons/svg/733/733585.svg',
+    },
   ];
   return (
     <motion.div
