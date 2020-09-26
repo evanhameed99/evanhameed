@@ -73,7 +73,7 @@ const Projects = () => {
       <h1 className=' text-white font-body capitalize font-bold text-center my-8 text-4xl md:text-5xl lg:text-5xl '>
         technical projects
       </h1>
-      <div className='mt-8  flex flex-wrap justify-center'>
+      <div className='mt-8 pb-20  flex flex-wrap justify-center'>
         {projects.map((proj, index) => {
           return (
             <Project

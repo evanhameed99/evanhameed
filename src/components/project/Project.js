@@ -7,7 +7,7 @@ const Project = ({ title, tech, logo, desc, link, ...props }) => {
   return (
     <motion.div
       // whileHover={{ scale: 1.1 }}
-      className={`text-black w-5/6 md:w-2/6 lg:w-1/5 shadow-base rounded-lg m-4 ${props.className}`}
+      className={`text-black w-5/6 md:w-2/6 lg:w-1/5 shadow-base rounded-lg mx-4 my-16 ${props.className}`}
     >
       <ReactCardFlip
         isFlipped={isFlipped}
