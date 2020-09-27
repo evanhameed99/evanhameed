@@ -44,7 +44,14 @@ const About = () => {
         >
           <img className='h-64  mb-8' src={profile} alt='profile' />
         </motion.div>
-        <motion.div className=' w-full px-4 text-lg md:text-2xl'>
+        <motion.div
+          className=' w-full px-4 text-lg md:text-2xl'
+          exit='out'
+          animate='in'
+          initial='out'
+          variants={pageVariant2}
+          transition={pageTransition2}
+        >
           <p>
             Web developer with experience in web development from basic HTML and
             CSS up to server-side manipulation. I bring strong skills in terms
